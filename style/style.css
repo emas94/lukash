@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto', 'arial';
+  scroll-behavior: smooth;
+}
+
+div.home {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/home.jpg');
+  background-size: cover;
+}
+
+div.services {
+  position: relative;
+  height: 100vh;
+  background-color: plum;
+}
+
+div.price {
+  position: relative;
+  height: 100vh;
+  background-color: greenyellow;
+}
+
+div.about {
+  position: relative;
+  height: 100vh;
+  background-color: wheat;
+}
+
+div.contact {
+  position: relative;
+  height: 100vh;
+  background-color: goldenrod;
+}
+
+
+.topDiv {
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+}
+
+nav {
+  /* position: fixed; */
+  top: 0;
+  transition: .2s all linear;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul a {
+  cursor: pointer;
+}
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.homeContent {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  bottom: 20px;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  border: 5px solid black;
+  box-shadow: 0 0 15px white;
+  border-radius: 50px;
+}
+
+.homeContent p {
+  position: absolute;
+  border-radius: 50px;
+  border: 5px solid black;
+  box-shadow: 0 0 15px white;
+  left: 5%;
+  background-color: powderblue;
+  transform: translateY(-50%);
+  padding: 5px;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+@media (orientation: portrait) {
+  .navbar ul a.active {
+    border: none !important;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+
+}
