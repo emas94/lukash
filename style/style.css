@@ -106,4 +106,14 @@ nav.sticky {
     transform: scale(1.2);
   }
 
+  .homeContent {
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    top: 40%;
+  }
+
+  .home {
+    background-position: 40% center;
+  }
 }
