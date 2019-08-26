@@ -9,15 +9,44 @@
 div.home {
   position: relative;
   height: 100vh;
+
+}
+
+div.homePhoto {
+  height: 50vh;
   background-image: url('../img/home.jpg');
   background-size: cover;
+  background-position: center 70%;
 }
+
+
 
 div.services {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: plum;
 }
+
+.services .h1 {
+  height: 20vh;
+  line-height: 20vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pt-6 {
+  padding-top: 5%;
+}
+
+#services-icons {}
+
+.serv1 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+
 
 div.price {
   position: relative;
@@ -88,7 +117,7 @@ nav.sticky {
   border: 5px solid black;
   box-shadow: 0 0 15px white;
   left: 5%;
-  background-color: powderblue;
+  background-color: skyblue;
   transform: translateY(-50%);
   padding: 5px;
   font-weight: bold;

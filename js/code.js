@@ -50,7 +50,7 @@ const scrollToSection = () => {
 
   })
 }
-scrollToSection();
+window.addEventListener('scroll', scrollToSection);
 
 const sectionArea = () => {
   home = document.querySelector('div.home').clientHeight;
