@@ -27,7 +27,8 @@ div.homePhoto {
 div.services {
   position: relative;
   /* height: 100vh; */
-  background-color: plum;
+  font-weight: bold;
+
 }
 
 .services .h1 {
@@ -43,10 +44,21 @@ div.services {
 
 #services-icons {}
 
+.servBGC {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(100% 0, 100% 50%, 0 100%, 0 50%);
+  background-color: grey;
+  z-index: -1;
+}
+
 .serv1 {
   height: 300px;
   width: 300px;
   border-radius: 50px;
+
+  z-index: 1;
 }
 
 
