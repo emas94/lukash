@@ -6,6 +6,8 @@
   scroll-behavior: smooth;
 }
 
+
+
 div.home {
   position: relative;
   height: 100vh;
@@ -13,6 +15,7 @@ div.home {
 }
 
 div.homePhoto {
+
   height: 50vh;
   background-image: url('../img/home.jpg');
   background-size: cover;
