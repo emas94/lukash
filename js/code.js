@@ -50,6 +50,7 @@ const scrollToSection = () => {
 
   })
 }
+scrollToSection();
 window.addEventListener('scroll', scrollToSection);
 
 const sectionArea = () => {
@@ -114,6 +115,7 @@ const sectionArea = () => {
     btnAbout.classList.remove('active');
   }
 }
+sectionArea();
 window.addEventListener('scroll', sectionArea);
 
 const sizeOfH = () => {
