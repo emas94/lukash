@@ -87,7 +87,7 @@ const sectionArea = () => {
     btnContact.classList.remove('active');
 
     console.log('2 sekcja')
-  } else if (scrollSize < about + spaceBetweemSecondAndSecond) {
+  } else if (scrollSize < price + spaceBetweemSecondAndSecond) {
     //add
     btnPrice.classList.add('active');
     //remove
@@ -115,3 +115,22 @@ const sectionArea = () => {
   }
 }
 window.addEventListener('scroll', sectionArea);
+
+const sizeOfH = () => {
+  const divH = document.querySelectorAll('div.h1');
+  const nav = document.querySelector('nav').clientHeight;
+  divH.forEach((h) => {
+    h.style.paddingTop = nav + 10 + "px";
+
+  })
+
+}
+sizeOfH();
+
+const spanYear = document.querySelector('.footer span');
+const year = new Date().getFullYear();
+
+const addYear = () => {
+  spanYear.textContent = year;
+}
+addYear();

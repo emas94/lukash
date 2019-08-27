@@ -4,9 +4,20 @@
   box-sizing: border-box;
   font-family: 'roboto', 'arial';
   scroll-behavior: smooth;
+  list-style-type: none;
 }
 
+.container {
+  max-width: 1400px;
+}
 
+.about .container {
+  margin-top: 100px !important;
+}
+
+.ml-6 {
+  margin-left: 30%;
+}
 
 div.home {
   position: relative;
@@ -31,9 +42,9 @@ div.services {
 
 }
 
-.services .h1 {
-  height: 20vh;
-  line-height: 20vh;
+div.h1 {
+  /* height: 30vh;
+  line-height: 30vh; */
   font-weight: bold;
   text-align: center;
 }
@@ -70,8 +81,10 @@ div.price {
 }
 
 div.about {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-color: wheat;
 }
 
@@ -138,12 +151,41 @@ nav.sticky {
   font-weight: bold;
 }
 
+
 .navbar a.active {
   border: 2px solid black;
   font-weight: bold;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  /* height: 200px; */
+  background-color: grey;
+}
+
 @media (orientation: portrait) {
+  div.h1 {
+    font-size: 18px;
+    /* line-height: 18px; */
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+
+
   .navbar ul a.active {
     border: none !important;
     font-weight: bold;
