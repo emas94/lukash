@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'roboto', 'arial';
+  font-family: 'Red Hat Text', 'roboto', 'arial';
   scroll-behavior: smooth;
 
 }
@@ -70,6 +70,18 @@ div.h1 {
   padding-top: 5%;
 }
 
+.mb-80px {
+  margin-bottom: 80px;
+}
+
+.mt-100px {
+  margin-top: 100px;
+}
+
+.pb-50px {
+  padding-bottom: 80px;
+}
+
 #services-icons {}
 
 .servBGC {
@@ -133,6 +145,7 @@ div.about img {
 
 .priceOffert span {
   font-size: 48px;
+  font-family: 'chilanka', 'roboto';
   font-weight: bold;
   padding: 10px;
   flex-wrap: nowrap;
@@ -194,7 +207,7 @@ div.about img {
 
 div.contact {
   position: relative;
-  min-height: 100vh;
+  min-height: 50vh;
 
 }
 
@@ -263,6 +276,18 @@ nav.sticky {
 
 .contact .line {
   margin-bottom: 20px;
+}
+
+.contact .container {
+
+  font-weight: 500;
+  font-size: 18px;
+  ;
+}
+
+.contact .BGC {
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 .contactTop {
@@ -380,5 +405,10 @@ nav.sticky {
 
   .home {
     background-position: 40% center;
+  }
+
+  .serv1 {
+    height: 200px;
+    width: 200px;
   }
 }
