@@ -285,6 +285,10 @@ nav.sticky {
   ;
 }
 
+.contact .container .card {
+  width: 70%;
+}
+
 .contact .BGC {
 
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
@@ -410,5 +414,13 @@ nav.sticky {
   .serv1 {
     height: 200px;
     width: 200px;
+  }
+
+  .contact .container .card {
+    width: 90%;
+  }
+
+  .contact .container .card .row {
+    text-align: center;
   }
 }
