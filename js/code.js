@@ -87,7 +87,6 @@ const sectionArea = () => {
     btnAbout.classList.remove('active');
     btnContact.classList.remove('active');
 
-    console.log('2 sekcja')
   } else if (scrollSize < price + spaceBetweemSecondAndSecond) {
     //add
     btnPrice.classList.add('active');
@@ -136,3 +135,15 @@ const addYear = () => {
   spanYear.textContent = year;
 }
 addYear();
+
+
+const btnOffert = () => {
+  const btn = document.querySelectorAll('.price button');
+  btn.forEach((b) => {
+    b.addEventListener('click', () => {
+      window.scrollTo(0, servicesSize);
+
+    })
+  })
+}
+btnOffert();

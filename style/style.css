@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: 'roboto', 'arial';
   scroll-behavior: smooth;
+
+}
+
+body {
+  overflow-X: hidden;
   list-style-type: none;
 }
 
@@ -12,11 +17,15 @@
 }
 
 .about .container {
-  margin-top: 20vh !important;
+  margin-top: 20vh;
 }
 
 .ml-6 {
   margin-left: 30%;
+}
+
+.mt-8p {
+  margin-top: 8%;
 }
 
 .b-1 {
@@ -84,8 +93,14 @@ div.h1 {
 
 div.price {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 
+}
+
+.price .container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
 }
 
 div.about {
@@ -98,6 +113,51 @@ div.about {
 
 div.about img {
   box-shadow: 0 0 10px white;
+}
+
+.priceOffert {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  flex-basis: 49%;
+  /* flex-wrap: wrap; */
+
+}
+
+.card {
+  box-shadow: 0 0 10px black;
+
+}
+
+.priceOffert span {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 10px;
+  flex-wrap: nowrap;
+  display: block;
+  align-self: center;
+  flex-basis: 20%;
+  color: yellowgreen;
+}
+
+.priceOffert div {
+  flex-basis: 100%;
+  align-self: center;
+
+}
+
+.priceOffert div p {
+  padding: 0;
+  margin: 0;
+}
+
+.priceOffert ul {
+  list-style-type: circle;
+  font-size: 0.2rem !important;
+}
+
+.priceOffert ul li {
+  font-size: 0.5rem;
 }
 
 .about .aboutBGC {
@@ -132,7 +192,7 @@ div.about img {
 
 div.contact {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 
@@ -199,11 +259,53 @@ nav.sticky {
   font-weight: bold;
 }
 
+.contact .line {
+  margin-bottom: 20px;
+}
+
+.contactTop {
+  display: flex;
+  /* margin-top: 10px; */
+  flex-direction: column;
+  height: 350px;
+  background-image: url('../img/kontakt.jpg');
+  background-size: cover;
+  background-position: 80% 20%;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+  /* box-shadow: 0 10px 15px black; */
+}
+
+.contactLoc {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  border: 1px solid black;
+
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   /* height: 200px; */
-  background-color: grey;
+  background-color: black;
+  color: white;
+}
+
+.footer h1 {
+  border-top: 1px solid white;
+  padding-top: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
 }
 
 .line {
@@ -217,9 +319,27 @@ nav.sticky {
 
 }
 
-@media (orientation: portrait) {
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+
+
   div.h1 {
-    font-size: 18px;
+    font-size: 28px;
     /* line-height: 18px; */
   }
 
@@ -228,7 +348,7 @@ nav.sticky {
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 26px;
     font-weight: bold;
   }
 
