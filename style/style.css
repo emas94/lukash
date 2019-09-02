@@ -7,6 +7,18 @@
 
 }
 
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+  }
+}
+
+.carousel-multi-item-2 .card img {
+  border-radius: 2px;
+}
+
 body {
   overflow-X: hidden;
   list-style-type: none;
@@ -38,19 +50,37 @@ body {
 
 div.home {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 
 div.homePhoto {
 
-  height: 50vh;
+  height: calc(50vh - 70px);
   background-image: url('../img/home.jpg');
   background-size: cover;
   background-position: center 70%;
 }
 
+div.bottomDiv {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 20vh;
+  height: 20vh;
+  background-color: black;
+  color: white;
+  z-index: 1;
+  border-top-right-radius: 100%;
 
+}
+
+div.bottomDiv div {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50%;
+  transform: rotate(45deg);
+}
 
 div.services {
   position: relative;
@@ -82,7 +112,41 @@ div.h1 {
   padding-bottom: 80px;
 }
 
-#services-icons {}
+.modal-content {
+  /* min-width: 800px; */
+  min-height: 80vh;
+
+}
+
+.modal-body p {
+  margin-top: 20px;
+
+}
+
+.modal-body img {
+  display: block;
+  box-shadow: 0 0 10px 2px black;
+  margin-top: 20px;
+  height: 200px !important;
+  width: 200px !important;
+  border-radius: 0% !important;
+}
+
+.services .container h1 {
+  font-weight: 500;
+  font-family: roboto;
+  font-style: italic;
+  text-shadow: 0 0 25px royalblue;
+}
+
+.about .container h1,
+h2 {
+  font-weight: 500;
+  font-family: roboto;
+  font-style: italic;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
 
 .servBGC {
   position: absolute;
@@ -94,8 +158,8 @@ div.h1 {
 }
 
 .serv1 {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 20px;
   box-shadow: 0 0 10px white;
   z-index: 1;
@@ -205,7 +269,20 @@ div.about img {
   z-index: -1;
 }
 
+div.gallery {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 80vh;
+}
+
+.controls {
+  text-align: center;
+}
+
 div.contact {
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 50vh;
 
@@ -391,6 +468,7 @@ nav.sticky {
   p {
     font-size: 14px;
   }
+
 
 
 
