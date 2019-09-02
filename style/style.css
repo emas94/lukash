@@ -273,7 +273,7 @@ div.gallery {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .controls {
