@@ -51,15 +51,17 @@ body {
 div.home {
   position: relative;
   min-height: 100vh;
+  background-image: url('../img/home.jpg');
+  background-size: cover;
 
 }
 
 div.homePhoto {
 
-  height: calc(50vh - 70px);
+  /* height: calc(50vh - 70px);
   background-image: url('../img/home.jpg');
   background-size: cover;
-  background-position: center 70%;
+  background-position: center 70%; */
 }
 
 div.bottomDiv {
