@@ -138,12 +138,12 @@ div.h1 {
   font-weight: 500;
   font-family: roboto;
   font-style: italic;
-  text-shadow: 0 0 25px royalblue;
+  text-shadow: 0 0 3px royalblue;
 }
 
 .about .container h1,
-h2 {
-  font-weight: 500;
+.price>h1 {
+  font-weight: bold;
   font-family: roboto;
   font-style: italic;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
@@ -275,11 +275,22 @@ div.gallery {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 70vh;
+  min-height: 700px;
 }
 
 .controls {
   text-align: center;
+
+}
+
+.controls i {
+  color: black;
+  transition: .1s linear;
+  font-size: 4rem;
+}
+
+.controls i:hover {
+  color: grey;
 }
 
 div.contact {
