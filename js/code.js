@@ -1,3 +1,10 @@
+// MDB Lightbox Init
+
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
 const possitionFixef = () => {
   const divTop = document.querySelector('.topDiv').clientHeight;
   const scrollSize = window.scrollY;
@@ -174,3 +181,17 @@ addYear();
 // $('#myModal').on('shown.bs.modal', function () {
 //   $('#myInput').trigger('focus')
 // })
+
+//klikanie i powiekszanie
+
+const imagesOfServices = document.querySelectorAll('.services img');
+
+
+
+const scaleOfImg = () => {
+  imagesOfServices.forEach((img) => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('scaleOfImg');
+    })
+  })
+}

@@ -65,24 +65,14 @@ div.homePhoto {
 }
 
 div.bottomDiv {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 20vh;
-  height: 20vh;
-  background-color: black;
-  color: white;
-  z-index: 1;
-  border-top-right-radius: 100%;
+  display: none;
 
 }
 
-div.bottomDiv div {
-  font-size: 24px;
-  text-align: center;
-  margin-top: 50%;
-  transform: rotate(45deg);
-}
+
+
+
+
 
 div.services {
   position: relative;
@@ -114,7 +104,7 @@ div.h1 {
   padding-bottom: 80px;
 }
 
-.modal-content {
+.price .modal-content {
   /* min-width: 800px; */
   min-height: 80vh;
 
@@ -125,7 +115,7 @@ div.h1 {
 
 }
 
-.modal-body img {
+.price .modal-body img {
   display: block;
   box-shadow: 0 0 10px 2px black;
   margin-top: 20px;
@@ -133,6 +123,9 @@ div.h1 {
   width: 200px !important;
   border-radius: 0% !important;
 }
+
+
+
 
 .services .container h1 {
   font-weight: 500;
@@ -167,7 +160,14 @@ div.h1 {
   z-index: 1;
 }
 
+.scaleOfImg {
+  transform: scale(1.2);
+}
 
+.services img {
+  transition: .5s linear;
+
+}
 
 div.price {
   position: relative;
@@ -278,6 +278,8 @@ div.gallery {
   min-height: 700px;
 }
 
+
+
 .controls {
   text-align: center;
 
@@ -309,8 +311,17 @@ div.contact {
   width: 100%;
   background-color: grey;
   color: white;
-  text-align: center;
+  text-align: right;
   line-height: 70px;
+  padding-right: 10%;
+}
+
+.topDiv p {
+  font-size: 28px;
+  font-family: 'roboto' !important;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  font-style: italic;
 }
 
 nav {
@@ -362,6 +373,8 @@ nav.sticky {
 .navbar a.active {
   border: 2px solid black;
   font-weight: bold;
+  border-radius: 80px;
+  padding: 5px;
 }
 
 .contact .line {
@@ -457,7 +470,138 @@ nav.sticky {
     display: block;
   }
 
+  div.bottomDiv {
+    bottom: 10px;
+    right: 10px;
+  }
 
+  .topDiv {
+    text-align: center;
+    padding: 0;
+  }
+
+
+  div.bottomDiv {
+    position: fixed;
+    display: block;
+    bottom: 10px;
+    left: 10px;
+    width: 10vh;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    border-radius: 50%;
+    border: 5px solid cadetblue;
+
+  }
+
+  div.bottomDiv div {
+    font-size: 34px;
+    line-height: calc(10vh - 10px);
+    text-align: center;
+    color: cadetblue;
+  }
+
+  .fa-phone {
+    transition: .3s;
+    animation: shake 6s infinite linear both;
+    ;
+
+    transform-origin: 50% 0;
+
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+
+    80% {
+      transform: translateX(0);
+    }
+
+    81% {
+      transform: translateX(-10px);
+    }
+
+    82% {
+      transform: translateX(10px);
+    }
+
+    83% {
+      transform: translateX(-10px);
+    }
+
+    84% {
+      transform: translateX(-10px);
+    }
+
+    85% {
+      transform: translateX(10px);
+    }
+
+    86% {
+      transform: translateX(-10px);
+    }
+
+    87% {
+      transform: translateX(10px);
+    }
+
+    88% {
+      transform: translateX(-10px);
+    }
+
+    89% {
+      transform: translateX(10px);
+    }
+
+    90% {
+      transform: translateX(-10px);
+    }
+
+    91% {
+      transform: translateX(10px);
+    }
+
+    92% {
+      transform: translateX(-10px);
+    }
+
+    93% {
+      transform: translateX(10px);
+    }
+
+    94% {
+      transform: translateX(-10px);
+    }
+
+    95% {
+      transform: translateX(10px);
+    }
+
+    96% {
+      transform: translateX(-10px);
+    }
+
+    97% {
+      transform: translateX(10px);
+    }
+
+    98% {
+      transform: translateX(-10px);
+    }
+
+    99% {
+      transform: translateX(10px);
+    }
+
+    100% {
+      transform: translateX(-10px);
+    }
+
+  }
 
   div.h1 {
     font-size: 28px;
