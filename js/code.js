@@ -195,3 +195,36 @@ const scaleOfImg = () => {
     })
   })
 }
+
+
+//show more
+$(document).ready(function () {
+  let item = $('.services .col1');
+  let line = $('.services hr');
+  console.log(item);
+  let itemToShow = 4;
+  let lineToShow = 2;
+  const showMoreBTN = $('.showMore');
+  let numberOfItem = item.length;
+  item.hide();
+  line.hide();
+  if (numberOfItem > itemToShow) {
+    showMoreBTN.show();
+
+  }
+
+  item.slice(0, itemToShow).show();
+  line.slice(0, lineToShow).show();
+
+  showMoreBTN.click(function () {
+    let showing = item.filter(`:visible`).length;
+    let showingLine = line.filter(`:visible`).length;
+    item.slice(showing - 1, showing + itemToShow).fadeIn();
+    line.slice(showingLine - 1, showingLine + lineToShow).fadeIn();
+
+    let nowShowing = item.filter(`:visible`).length;
+    if (nowShowing >= numberOfItem) {
+      showMoreBTN.hide()
+    }
+  })
+});
