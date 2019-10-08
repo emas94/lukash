@@ -63,7 +63,79 @@ div.homePhoto {
   background-size: cover;
   background-position: center 70%; */
 }
+.home__text{
+position: absolute;
+width: 60%;
+right: 20px;
+bottom: 200px;
+  font-size: 48px;
+  text-align: center;
+font-weight: bold;
+}
+.home__text h1{
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
+}
+  .home__text p{
+    margin: auto;
+    width: 100%;
+  opacity: 0;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+.home__text p:nth-of-type(1)
+{
+  animation: 40s opa linear infinite;
+}
+.home__text p:nth-of-type(2)
+{
+  animation:40s 4s opa linear infinite;
+}
+.home__text p:nth-of-type(3)
+{
+  animation:40s 8s opa linear infinite;
+}
+.home__text p:nth-of-type(4)
+{
 
+  animation:40s 12s opa linear infinite;
+}
+.home__text p:nth-of-type(5)
+{
+  animation:40s 16s opa linear infinite;
+}
+.home__text p:nth-of-type(6)
+{
+  animation:40s 20s opa linear infinite;
+}
+.home__text p:nth-of-type(7)
+{
+  animation:40s 24s opa linear infinite;
+}
+.home__text p:nth-of-type(8)
+{
+  animation:40s 28s opa linear infinite;
+}
+.home__text p:nth-of-type(9)
+{
+  animation:40s 32s opa linear infinite;
+}
+.home__text p:nth-of-type(10)
+{
+  animation:40s 36s opa linear infinite;
+}
+
+
+@keyframes opa{
+  0%{
+    opacity: 0;
+  }
+  4%{opacity: 1;}
+  6%{opacity: 1;}
+  10%{opacity: 0;}
+}
 div.bottomDiv {
   display: none;
 
@@ -559,7 +631,15 @@ nav.sticky {
 .navbar-toggler{
   margin: 5px;
 }
-
+.home__text{
+  bottom: 120px;
+}
+.home__text h1{
+  font-size: 28px;
+}
+.home__text p {
+  font-size: 24px;;
+}
   div.bottomDiv {
     bottom: 10px;
     right: 10px;
